@@ -4,24 +4,23 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"lint": "lint --ext .ts,.jsx,.tsx --fix --quiet ./packages"
+		"lint": "eslint --ext .js,.ts,.jsx,.tsx --fix --quiet ./packages"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
-		"@commitlint/cli": "^19.3.0",
-		"@commitlint/config-conventional": "^19.2.2",
-		"@eslint/js": "^8.56.0",
-		"@typescript-eslint/eslint-plugin": "^7.16.0",
-		"@typescript-eslint/parser": "^7.16.0",
-		"commitlint": "^19.3.0",
-		"eslint": "^8.56.0",
-		"eslint-config-prettier": "^9.1.0",
-		"eslint-plugin-prettier": "^5.1.3",
-		"globals": "^15.8.0",
-		"husky": "^9.0.11",
-		"prettier": "^3.3.2"
+		"@commitlint/cli": "^17.1.2",
+		"@commitlint/config-conventional": "^17.1.0",
+		"@typescript-eslint/eslint-plugin": "^5.40.0",
+		"@typescript-eslint/parser": "^5.40.0",
+		"commitlint": "^17.1.2",
+		"eslint": "^8.25.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin,": "link:@typescript-eslint/eslint-plugin,",
+		"eslint-plugin-prettier": "^4.2.1",
+		"husky": "^8.0.1",
+		"prettier": "^2.7.1",
+		"typescript": "^4.8.4"
 	}
 }
