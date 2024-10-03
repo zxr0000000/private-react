@@ -1,4 +1,4 @@
-import { version } from 'typescript';
+// import { version } from 'typescript';
 import { getBaseRollupPlugins, getPackageJSON, resolvePkgPath } from './utils';
 import generatePackageJson from 'rollup-plugin-generate-package-json';
 
