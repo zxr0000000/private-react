@@ -15,7 +15,7 @@ export function resolvePkgPath(pkgName, isDist) {
 	return `${pkgPath}/${pkgName}`;
 }
 
-export function getPackageJSON(pkgName, isDist) {
+export function getPackageJSON(pkgName) {
 	// ...包路径
 	const path = `${resolvePkgPath(pkgName)}/package.json`;
 	const str = fs.readFileSync(path, { encoding: 'utf-8' });
@@ -24,7 +24,8 @@ export function getPackageJSON(pkgName, isDist) {
 
 export function getBaseRollupPlugins({
 	alias = {
-		__DEV__: true
+		__DEV__: true,
+		preventAssignment: true
 	},
 	typescript = {}
 } = {}) {

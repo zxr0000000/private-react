@@ -25,7 +25,11 @@ const ReactElement = function (
 	return element;
 };
 
-export const jsx = (type: ElementType, config: any, ...maybeChildren) => {
+export const jsx = (
+	type: ElementType,
+	config: any,
+	...maybeChildren: any[]
+) => {
 	let key: Key = null;
 	const props: Props = {};
 	let ref: Ref = null;
