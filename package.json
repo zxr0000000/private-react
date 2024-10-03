@@ -5,7 +5,8 @@
 	"main": "index.js",
 	"scripts": {
 		"lint": "eslint --ext .js,.ts,.jsx,.tsx --fix --quiet ./packages",
-		"build:dev": "rimraf dist && rollup --bundleConfigAsCjs --config scripts/rollup/dev.config.js"
+		"build:dev": "rimraf dist && rollup --bundleConfigAsCjs --config scripts/rollup/dev.config.js",
+		"demo": "vite serve demo/test-fc --config scripts/vite/vite.config.js --force"
 	},
 	"keywords": [],
 	"author": "",
@@ -20,7 +21,7 @@
 		"commitlint": "^17.1.2",
 		"eslint": "^8.57.0",
 		"eslint-config-prettier": "^8.5.0",
-		"eslint-plugin,": "link:@typescript-eslint/eslint-plugin,",
+		"eslint-plugin": "^1.0.1",
 		"eslint-plugin-prettier": "^4.2.1",
 		"husky": "^8.0.3",
 		"prettier": "^2.8.8",
@@ -28,7 +29,16 @@
 		"rollup": "^4.18.1",
 		"rollup-plugin-generate-package-json": "^3.2.0",
 		"rollup-plugin-typescript2": "^0.36.0",
-		"typescript": "^4.8.4"
+		"typescript": "^4.8.4",
+		"@eslint/js": "^9.9.0",
+		"@types/react": "^18.3.3",
+		"@types/react-dom": "^18.3.0",
+		"@vitejs/plugin-react": "^4.3.1",
+		"eslint-plugin-react-hooks": "^4.6.2",
+		"eslint-plugin-react-refresh": "^0.4.9",
+		"globals": "^15.9.0",
+		"typescript-eslint": "^8.0.1",
+		"vite": "^5.4.1"
 	},
 	"dependencies": {
 		"@rollup/plugin-replace": "^6.0.1"
